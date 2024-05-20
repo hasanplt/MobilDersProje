@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { StyleSheet, ScrollView, View, Text, Image,TouchableOpacity ,Button, FlatList} from 'react-native';
-import  {getTeamInformations,getTeamStatics} from '../data/teamsapi';
+import { StyleSheet, View, Text,TouchableOpacity , FlatList} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {getTeamMatches} from '../data/teamsapi';
 import MatchItem from '../components/MatchItem';

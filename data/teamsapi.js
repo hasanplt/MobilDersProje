@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { format, subWeeks } from 'date-fns';
 
 async function getTeamInformations(teamId){
     const options = {

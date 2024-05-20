@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+
 import MatchItem from '../components/MatchItem';
 import getMatches from '../data/matches';
 
 export default function HomeScreen({ navigation }) {
   const [matchData, setMatchData] = useState([]);
   const [favoriteMatches, setFavoriteMatches] = useState([]);
+  
   const handleFavoritesPress = () => {
     navigation.navigate('FavoriteMatchesScreen', { favoriteMatches });
   };
